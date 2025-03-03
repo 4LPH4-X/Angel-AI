@@ -2,23 +2,32 @@ from robot.process.FinancialMarket import monitor_stocks
 
 def main():
     while True:
-        print("\n===== MENU PRINCIPAL =====")
-        print("1. Executar Financial Market")
-        print("2. Executar WhatsApp Messager")
-        print("3. Sair")
+        print("\n" + "=" * 30)
+        print("      🛠 MENU PRINCIPAL 🛠      ")
+        print("=" * 30)
+        print("1️⃣  📈 Monitorar Mercado Financeiro")
+        print("2️⃣  💬 Enviar Mensagem no WhatsApp")
+        print("3️⃣  📊 Exibir Relatórios")
+        print("4️⃣  ⚙️  Configurações")
+        print("5️⃣  ❌ Sair")
+        print("=" * 30)
 
-        opcao = input("Escolha uma opção: ")
+        opcao = input("🔹 Escolha uma opção: ")
 
         if opcao == "1":
-            print("Executando Financial Market...")
+            print("\n▶️ Iniciando monitoramento do mercado financeiro...\n")
             monitor_stocks()
         elif opcao == "2":
-            print("Executando WhatsApp Messager...")
+            print("\n▶️ Abrindo WhatsApp Messenger...\n")
         elif opcao == "3":
-            print("Saindo do programa...")
+            print("\n▶️ Exibindo relatórios...\n")
+        elif opcao == "4":
+            print("\n▶️ Acessando configurações...\n")
+        elif opcao == "5":
+            print("\n❌ Saindo do programa...\n")
             break
         else:
-            print("Opção inválida! Tente novamente.")
+            print("\n⚠️ Opção inválida! Tente novamente.\n")
 
 if __name__ == "__main__":
     main()
